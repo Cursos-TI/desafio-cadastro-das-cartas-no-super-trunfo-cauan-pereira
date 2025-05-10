@@ -9,8 +9,8 @@
         float area1;                                       //Armazena o número que representa a área da cidade
         float pib1;                                        //Armazena o número que representa o PIB da cidade
         int pontos_turisticos1;                            //Armazena a quantidade de pontos turísticos da cidade
-        float densidade_populacional1 = populacao1/area1;  //Armazena a densidade populacional da cidade dividindo a população dela pela sua área
-        float pib_per_capita1 = pib1/populacao1;            //Armazena o PIB Per Capita divindo o PIB pela população da cidade
+        float densidade_populacional1;                     //Armazena a densidade populacional da cidade dividindo a população dela pela sua área
+        float pib_per_capita1;                             //Armazena o PIB Per Capita divindo o PIB pela população da cidade
 
     //Variáveis da Carta 2    
         char estado2;                                      //Armazena a letra que represetna o estado     
@@ -20,8 +20,8 @@
         float area2;                                       //Armazena o número que representa a área da cidade
         float pib2;                                        //Armazena o número que representa o PIB da cidade
         int pontos_turisticos2;                            //Armazena a quantidade de pontos turísticos da cidade
-        float densidade_populacional2 = populacao2/area2;  //Armazena a densidade populacional da cidade dividindo a população dela pela sua área
-        float pib_per_capita2 = pib2/populacao2;            //Armazena o PIB Per Capita divindo o PIB pela população da cidade
+         float densidade_populacional2;                     //Armazena a densidade populacional da cidade dividindo a população dela pela sua área
+        float pib_per_capita2;                             //Armazena o PIB Per Capita divindo o PIB pela população da cidade
 
     //Entrada de dados da carta 1
 
@@ -46,6 +46,9 @@
     printf("Insira o número de pontos turísticos da sua cidade: \n");
     scanf("%d", &pontos_turisticos1);
 
+    densidade_populacional1 = populacao1 / area1;
+    pib_per_capita1 = pib1 / populacao1;
+
     //Entrada de dados da carta 2
 
         printf("Agora a carta 2. Escolha uma letra entre 'A' e 'H' para sua carta.\n");
@@ -68,6 +71,9 @@
 
         printf("Insira o número de pontos turísticos da sua cidade: \n");
         scanf("%d", &pontos_turisticos2);
+
+        densidade_populacional2 = populacao2 / area2;
+        pib_per_capita2 = pib2 / populacao2;
 
     //Impressão das informações das duas cartas
 
